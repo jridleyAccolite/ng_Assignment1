@@ -1,0 +1,77 @@
+<!--task 1)
+Add new route
+route: Registraion route
+component: RegistraionComponent
+i) username
+ii) Password
+iii) Email Address
+iv) gender
+v) Sign up button-->
+
+<form>
+    <div class="row mb-3 mt-3">
+        <h1>Register here:</h1>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label" for="username">Username</label>
+        <input
+        type="text"
+        name="username"
+        placeholder="username"
+        [(ngModel)]="username"
+        class="form-control"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="password">Password</label>
+        <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        class="form-control"      
+        />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input
+        type="email"
+        name="email"
+        placeholder="name@example.com"
+        [(ngModel)]="email"
+        class="form-control"
+        />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="gender">Gender:</label>
+        <br>
+        <div class="form-check">
+            <label  class="form-check-label" for="genderCheck1">male</label>
+            <input
+            class="form-check-input"
+            id="genderCheck1"
+            type="radio"
+            name="gender"
+            />
+        </div>
+        <div class="form-check">
+            <input
+        id="genderCheck2"
+        class="form-check-input"
+        type="radio"
+        name="gender"/>
+            <label class="form-check-label" for="genderCheck2">female</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="genderCheck3">other</label>
+        <input
+        class="form-check-input"
+        id="genderCheck3"
+        type="radio"
+        name="gender"
+        />
+        </div>
+
+        <button class="btn btn-primary" [disabled]="!username.length || !password.length || !email.length">Register</button>
+    </div>
+</form>

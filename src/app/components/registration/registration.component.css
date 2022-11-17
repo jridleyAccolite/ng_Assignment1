@@ -1,0 +1,14 @@
+form {
+    width: 500px;
+  
+    
+  }
+  
+button {
+    float:right;
+}
+
+:host {
+    display: flex;
+    justify-content: center;
+  }
