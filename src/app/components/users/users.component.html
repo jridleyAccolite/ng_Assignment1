@@ -1,0 +1,25 @@
+<h1>Users:</h1>
+<br>
+<table class="table narrow-table">
+    <thead>
+      <tr>
+        <th scope="col">User ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let user of users">
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.address.suite }}<br> {{ user.address.street }}<br>{{ user.address.city }}
+                    <br>{{ user.address.zipcode }}<br>lat: {{ user.address.geo.lat }} 
+                    long: {{ user.address.geo.lng }}</td>
+            </tr>
+        </ng-container>
+    </tbody>

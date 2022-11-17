@@ -1,5 +1,11 @@
 # NgAssignment1
 
+default redirected to /registration for registration page,
+
+go to /users to see list of users details in table format
+
+----------
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
 ## Development server
