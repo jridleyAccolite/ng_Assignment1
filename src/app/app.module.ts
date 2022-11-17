@@ -7,11 +7,13 @@ import { RegistrationComponent } from './components/registration/registration.co
 
 
 import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
